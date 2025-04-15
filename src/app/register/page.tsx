@@ -1,4 +1,4 @@
-import { CreateUser } from '@/utils/supabase/actions-server'
+import { signup } from '../login/actions'
 
 function SubmitButton () {
   return (
@@ -17,7 +17,7 @@ export default function RegisterPage ({ searchParams }: { searchParams: { messag
     <main className='w-full max-w-7xl h-screen m-auto flex flex-col justify-center items-center gap-3 p-6'>
       <h1 className='text-5xl text-primary text-center'>Register</h1>
       <form
-        action={CreateUser}
+        action={signup}
         className='flex flex-col gap-3'
       >
         <input

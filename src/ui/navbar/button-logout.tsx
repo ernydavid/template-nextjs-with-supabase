@@ -1,6 +1,6 @@
 'use client'
 
-import { LogOutUser } from '@/utils/supabase/actions-server'
+import { logout } from '@/app/login/actions'
 import { useRouter } from 'next/navigation'
 
 export function UnAuthButton () {
@@ -10,7 +10,7 @@ export function UnAuthButton () {
     <button
       type='button'
       onClick={async () => {
-        await LogOutUser()
+        await logout()
         await router.refresh()
       }}
     >

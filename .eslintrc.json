@@ -1,4 +1,7 @@
 {
+  "rules": {
+    "camelcase": "off"
+  },
   "extends": [
     "./node_modules/standard/eslintrc.json",
     "next/core-web-vitals"

@@ -1,4 +1,4 @@
-import { LoginUser } from '@/utils/supabase/actions-server'
+import { login } from './actions'
 
 function SubmitButton () {
   return (
@@ -18,7 +18,7 @@ export default function LoginPage ({ searchParams }: { searchParams: { message: 
     <main className='w-full max-w-7xl h-screen m-auto flex flex-col justify-center items-center gap-3 p-6'>
       <h1 className='text-5xl text-primary text-center'>Login</h1>
       <form
-        action={LoginUser}
+        action={login}
         className='flex flex-col gap-3'
       >
         <input
